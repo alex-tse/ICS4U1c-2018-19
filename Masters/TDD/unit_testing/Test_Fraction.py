@@ -12,10 +12,14 @@ class TestFraction(unittest.TestCase):
         # 2. create a fraction3 object with numerator 1 and denominator 4
 
     def test_instance_creation(self):
-        self.assertIsInstance(Fraction.Fraction, self.fraction1)
+        self.assertIsInstance(self.fraction1, Fraction.Fraction)
 
     def test_instance_creation_0Denom(self):
+<<<<<<< HEAD
         self.assertRaises(ValueError, Fraction.Fraction(1, 0))
+=======
+        self.assertRaises(ValueError, Fraction.Fraction, 1,0)
+>>>>>>> 4a85bf162e59933d751222ad0007bcd51941f47b
 
     def test_get_numerator(self):
         self.assertEquals(self.fraction1.get_numerator(), 3)
